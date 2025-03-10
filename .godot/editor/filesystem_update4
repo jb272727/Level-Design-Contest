@@ -1,0 +1,10 @@
+res://Scenes/game.tscn
+res://Scenes/player.tscn
+res://Scenes/platform.tscn
+res://Scenes/coin.tscn
+res://Scenes/level_end_flag.tscn
+res://Scenes/death_plane.tscn
+res://Scenes/enemy.tscn
+res://Scenes/buff_fruit.tscn
+res://Scenes/conditional_block.tscn
+res://Scenes/coin_gate.tscn

@@ -1,22 +1,17 @@
-[gd_scene load_steps=27 format=3 uid="uid://clp30u8vsv4ta"]
+[gd_scene load_steps=31 format=3 uid="uid://clp30u8vsv4ta"]
 
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_08gl2"]
 [ext_resource type="Texture2D" uid="uid://cp23uy1si8t5s" path="res://Assets/brackeys_platformer_assets/sprites/knight.png" id="1_fsuyu"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_4lhxf"]
-atlas = ExtResource("1_fsuyu")
-region = Rect2(0, 192, 32, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_s2fxk"]
-atlas = ExtResource("1_fsuyu")
-region = Rect2(32, 192, 32, 32)
+[ext_resource type="FontFile" uid="uid://didrx4wroj1q5" path="res://Assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf" id="3_a5hj0"]
+[ext_resource type="AudioStream" uid="uid://x2q7nf8of06d" path="res://Assets/brackeys_platformer_assets/sounds/jump.wav" id="4_hnd61"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_x6um6"]
 atlas = ExtResource("1_fsuyu")
 region = Rect2(64, 192, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2ijdj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_0h3bg"]
 atlas = ExtResource("1_fsuyu")
-region = Rect2(96, 192, 32, 32)
+region = Rect2(64, 192, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_siao7"]
 atlas = ExtResource("1_fsuyu")
@@ -102,20 +97,14 @@ region = Rect2(224, 96, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_4lhxf")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_s2fxk")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_x6um6")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_2ijdj")
+"texture": SubResource("AtlasTexture_0h3bg")
 }],
-"loop": true,
+"loop": false,
 "name": &"hit",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -188,6 +177,58 @@ animations = [{
 "speed": 7.0
 }]
 
-[node name="Player" type="AnimatedSprite2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7xb21"]
+size = Vector2(10, 13)
+
+[sub_resource type="LabelSettings" id="LabelSettings_naflh"]
+font = ExtResource("3_a5hj0")
+font_size = 8
+shadow_size = 0
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gm4dl"]
+font = ExtResource("3_a5hj0")
+font_size = 8
+font_color = Color(1, 0, 0, 1)
+shadow_size = 0
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+z_index = 5
+collision_layer = 2
+script = ExtResource("1_08gl2")
+
+[node name="Player Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -11.885)
 sprite_frames = SubResource("SpriteFrames_c1khe")
 animation = &"hit"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, -6.5)
+shape = SubResource("RectangleShape2D_7xb21")
+
+[node name="Player Text" type="Label" parent="."]
+offset_left = -29.0
+offset_top = -42.0
+offset_right = 28.0
+offset_bottom = -19.0
+label_settings = SubResource("LabelSettings_naflh")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="Buff Text" type="Label" parent="."]
+offset_left = 2.0
+offset_top = -2.0
+offset_right = 18.0
+offset_bottom = 7.0
+scale = Vector2(0.6, 0.6)
+label_settings = SubResource("LabelSettings_gm4dl")
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="jumpsfx" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_hnd61")
+volume_db = -3.748
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

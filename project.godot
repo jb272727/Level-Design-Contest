@@ -11,5 +11,14 @@ config_version=5
 [application]
 
 config/name="Level-Design-Contest"
+run/main_scene="res://Scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[physics]
+
+common/physics_ticks_per_second=240
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

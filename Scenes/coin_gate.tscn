@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl8swh8dxefit"]
+
+[ext_resource type="Texture2D" uid="uid://bga38yr03ia8s" path="res://Assets/brackeys_platformer_assets/sprites/coin.png" id="1_xiowt"]
+
+[node name="Coin Gate" type="Sprite2D"]
+texture = ExtResource("1_xiowt")
+region_enabled = true
+region_rect = Rect2(3, 3, 10, 10)
