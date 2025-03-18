@@ -209,9 +209,9 @@ position = Vector2(-1, -6.5)
 shape = SubResource("RectangleShape2D_7xb21")
 
 [node name="Player Text" type="Label" parent="."]
-offset_left = -29.0
+offset_left = -117.0
 offset_top = -42.0
-offset_right = 28.0
+offset_right = 114.0
 offset_bottom = -19.0
 label_settings = SubResource("LabelSettings_naflh")
 horizontal_alignment = 1

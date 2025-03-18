@@ -8,9 +8,12 @@ var t: float = 0.0
 var direction: int = 1
 
 func _ready():
-	position = starting_pos
+	if starting_pos != Vector2.ZERO and ending_pos != Vector2.ZERO:
+		position = starting_pos
 
 func _process(delta: float):
+	if starting_pos == Vector2.ZERO and ending_pos == Vector2.ZERO:
+		return
 	t += direction * delta * speed
 
 	if t >= 1.0:

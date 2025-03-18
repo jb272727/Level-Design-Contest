@@ -1,10 +1,15 @@
 extends Area2D
 
 @onready var coinsfx = $coinsfx
+var player
+var player_sprite
+var player_text
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	player = get_tree().current_scene.find_child("Player", true, false)
+	player_sprite = player.find_child("Player Sprite")
+	player_text = player.find_child("Player Text")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -17,6 +22,7 @@ func _process(delta):
 func _on_body_entered(body):
 	coinsfx.play()
 	self.visible = false
+	player.coins += 1
 	$Timer.start(.25)
 
 

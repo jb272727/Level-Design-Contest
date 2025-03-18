@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741631422
+::res://::1741843102
 Conditional Block.gd::GDScript::-1::1741584911::0::1::::<>Sprite2D<>::
 icon.svg::CompressedTexture2D::5815113384392418273::1741470164::1741470195::1::::<><>::
 new_shader.tres::VisualShader::2565159765612987309::1741470164::0::1::::<><>::
@@ -28,22 +28,23 @@ platforms.png::CompressedTexture2D::5221174583149287576::1741470164::1741470195:
 slime_green.png::CompressedTexture2D::4021060976490957977::1741470164::1741470195::1::::<><>::
 slime_purple.png::CompressedTexture2D::6720851371495837458::1741470164::1741470195::1::::<><>::
 world_tileset.png::CompressedTexture2D::253568829220018562::1741470164::1741470195::1::::<><>::
-::res://Scenes/::1741587453
-buff_fruit.tscn::PackedScene::1152924887995434867::1741587408::0::1::::<><>::res://scripts/buff_fruit.gd<>uid://cxs3tk1fsr1dh::::res://Assets/brackeys_platformer_assets/sprites/fruit.png<>uid://5mxao34bhj5g::::res://Assets/brackeys_platformer_assets/sounds/power_up.wav
-coin.tscn::PackedScene::6180123221857582325::1741587453::0::1::::<><>::uid://bga38yr03ia8s::::res://Assets/brackeys_platformer_assets/sprites/coin.png<>res://scripts/coin.gd<>uid://ukj5el6kyyir::::res://Assets/brackeys_platformer_assets/sounds/coin.wav
-coin_gate.tscn::PackedScene::3227755041740335975::1741587408::0::1::::<><>::uid://bga38yr03ia8s::::res://Assets/brackeys_platformer_assets/sprites/coin.png
-conditional_block.tscn::PackedScene::5280304582458901759::1741587408::0::1::::<><>::uid://du3ihixg3fj3::::res://Assets/brackeys_platformer_assets/sprites/world_tileset.png<>res://Conditional Block.gd
-death_plane.tscn::PackedScene::8126479897073709655::1741587408::0::1::::<><>::res://scripts/death_plane.gd<>uid://dllndypxi55dq::::res://Assets/brackeys_platformer_assets/sounds/hurt.wav
-enemy.tscn::PackedScene::7872944541466724310::1741587408::0::1::::<><>::uid://bxj3j0slc7n0t::::res://Assets/brackeys_platformer_assets/sprites/slime_green.png<>res://scripts/enemy.gd<>uid://dllndypxi55dq::::res://Assets/brackeys_platformer_assets/sounds/hurt.wav
-game.tscn::PackedScene::300122782668522909::1741587408::0::1::::<><>::uid://clp30u8vsv4ta::::res://Scenes/player.tscn<>uid://du3ihixg3fj3::::res://Assets/brackeys_platformer_assets/sprites/world_tileset.png<>uid://dn1r63ytkpl24::::res://Scenes/death_plane.tscn<>uid://dx6k0ne3e5p2v::::res://Scenes/platform.tscn<>uid://cubxyx42evpuj::::res://Scenes/coin.tscn<>uid://bbwjf15kmao37::::res://Scenes/level_end_flag.tscn<>uid://dkfyim1nrrba1::::res://Scenes/enemy.tscn<>uid://qoqrfflgvxwd::::res://Scenes/buff_fruit.tscn<>uid://chh23y3ksrq0f::::res://Scenes/conditional_block.tscn<>uid://deyas8cwrojx4::::res://Assets/brackeys_platformer_assets/music/time_for_adventure.mp3
-level_end_flag.tscn::PackedScene::2502582632246514832::1741587408::0::1::::<><>::uid://dmfrctc4xwpsc::::res://Assets/brackeys_platformer_assets/sprites/flag.png<>res://scripts/Level End Flag.gd
-platform.tscn::PackedScene::8838253670166692247::1741587408::0::1::::<><>::res://scripts/platform.gd<>uid://cgnf8n3ub8co3::::res://Assets/brackeys_platformer_assets/sprites/platforms.png
-player.tscn::PackedScene::5577630136785144482::1741587408::0::1::::<><>::res://scripts/player.gd<>uid://cp23uy1si8t5s::::res://Assets/brackeys_platformer_assets/sprites/knight.png<>uid://didrx4wroj1q5::::res://Assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf<>uid://x2q7nf8of06d::::res://Assets/brackeys_platformer_assets/sounds/jump.wav
-::res://scripts/::1741587234
+::res://Scenes/::1741751878
+buff_fruit.tscn::PackedScene::1152924887995434867::1741751647::0::1::::<><>::res://scripts/buff_fruit.gd<>uid://cxs3tk1fsr1dh::::res://Assets/brackeys_platformer_assets/sprites/fruit.png<>uid://5mxao34bhj5g::::res://Assets/brackeys_platformer_assets/sounds/power_up.wav
+coin.tscn::PackedScene::6180123221857582325::1741751647::0::1::::<><>::uid://bga38yr03ia8s::::res://Assets/brackeys_platformer_assets/sprites/coin.png<>res://scripts/coin.gd<>uid://ukj5el6kyyir::::res://Assets/brackeys_platformer_assets/sounds/coin.wav
+coin_gate.tscn::PackedScene::3227755041740335975::1741751647::0::1::::<><>::uid://du3ihixg3fj3::::res://Assets/brackeys_platformer_assets/sprites/world_tileset.png<>res://scripts/coin_gate.gd<>uid://bga38yr03ia8s::::res://Assets/brackeys_platformer_assets/sprites/coin.png<>uid://didrx4wroj1q5::::res://Assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf
+conditional_block.tscn::PackedScene::5280304582458901759::1741751647::0::1::::<><>::uid://du3ihixg3fj3::::res://Assets/brackeys_platformer_assets/sprites/world_tileset.png<>res://Conditional Block.gd
+death_plane.tscn::PackedScene::8126479897073709655::1741751647::0::1::::<><>::res://scripts/death_plane.gd<>uid://dllndypxi55dq::::res://Assets/brackeys_platformer_assets/sounds/hurt.wav
+enemy.tscn::PackedScene::7872944541466724310::1741751647::0::1::::<><>::uid://bxj3j0slc7n0t::::res://Assets/brackeys_platformer_assets/sprites/slime_green.png<>res://scripts/enemy.gd<>uid://dllndypxi55dq::::res://Assets/brackeys_platformer_assets/sounds/hurt.wav
+game.tscn::PackedScene::300122782668522909::1741751878::0::1::::<><>::uid://clp30u8vsv4ta::::res://Scenes/player.tscn<>uid://du3ihixg3fj3::::res://Assets/brackeys_platformer_assets/sprites/world_tileset.png<>uid://dn1r63ytkpl24::::res://Scenes/death_plane.tscn<>uid://dx6k0ne3e5p2v::::res://Scenes/platform.tscn<>uid://cubxyx42evpuj::::res://Scenes/coin.tscn<>uid://bbwjf15kmao37::::res://Scenes/level_end_flag.tscn<>uid://dkfyim1nrrba1::::res://Scenes/enemy.tscn<>uid://qoqrfflgvxwd::::res://Scenes/buff_fruit.tscn<>uid://chh23y3ksrq0f::::res://Scenes/conditional_block.tscn<>uid://deyas8cwrojx4::::res://Assets/brackeys_platformer_assets/music/time_for_adventure.mp3<>uid://bl8swh8dxefit::::res://Scenes/coin_gate.tscn
+level_end_flag.tscn::PackedScene::2502582632246514832::1741751647::0::1::::<><>::uid://dmfrctc4xwpsc::::res://Assets/brackeys_platformer_assets/sprites/flag.png<>res://scripts/Level End Flag.gd
+platform.tscn::PackedScene::8838253670166692247::1741751647::0::1::::<><>::res://scripts/platform.gd<>uid://cgnf8n3ub8co3::::res://Assets/brackeys_platformer_assets/sprites/platforms.png
+player.tscn::PackedScene::5577630136785144482::1741751647::0::1::::<><>::res://scripts/player.gd<>uid://cp23uy1si8t5s::::res://Assets/brackeys_platformer_assets/sprites/knight.png<>uid://didrx4wroj1q5::::res://Assets/brackeys_platformer_assets/fonts/PixelOperator8.ttf<>uid://x2q7nf8of06d::::res://Assets/brackeys_platformer_assets/sounds/jump.wav
+::res://scripts/::1741751484
 buff_fruit.gd::GDScript::-1::1741586988::0::1::::<>Area2D<>::
-coin.gd::GDScript::-1::1741587234::0::1::::<>Area2D<>::
+coin.gd::GDScript::-1::1741750058::0::1::::<>Area2D<>::
+coin_gate.gd::GDScript::-1::1741750516::0::1::::<>Node2D<>::
 death_plane.gd::GDScript::-1::1741586674::0::1::::<>Area2D<>::
 enemy.gd::GDScript::-1::1741586579::0::1::::<>Node2D<>::
 Level End Flag.gd::GDScript::-1::1741555896::0::1::::<>Sprite2D<>::
-platform.gd::GDScript::-1::1741548608::0::1::::<>AnimatableBody2D<>::
-player.gd::GDScript::-1::1741586802::0::1::::<>CharacterBody2D<>::
+platform.gd::GDScript::-1::1741751484::0::1::::<>AnimatableBody2D<>::
+player.gd::GDScript::-1::1741750058::0::1::::<>CharacterBody2D<>::

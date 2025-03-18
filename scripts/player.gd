@@ -11,6 +11,7 @@ enum FruitType {
 @export var jump_velocity = -300.0
 @export var dead : bool = false
 @export var current_boost : FruitType = FruitType.NONE      # Do not change in Inspector please ->
+@export var coins : int = 0
 
 
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
